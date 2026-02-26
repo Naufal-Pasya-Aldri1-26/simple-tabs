@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Tab</title>
+        <meta name="description" content="A  simple site to test basic DOM Manipulation.">
+        <meta name="keywords" content="learning project, beginner">
+        <meta name="author" content="Camille saint saëns">
+        <meta property="og:title" content="Simple tabs">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="path/to/your/image.jpg">
+        <meta property="og:url" content="https://github.com/Naufal-Pasya-Aldri1-26/simple-tabs#">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <!--Tab links-->
+        <div class="tab">
+            <button class="tab-link" onclick="openTab(event, 'first')">First Tab</button>
+            <button class="tab-link" onclick="openTab(event, 'second')">Second Tab</button>
+            <button class="tab-link" onclick="openTab(event, 'third')">Third Tab</button>
+            <button class="tab-link" onclick="openTab(event, 'fourth')">Fourth Tab</button>
+        </div>
+
+        <!--tab content-->
+        <div id="first" class="tab-content">
+            <h3>This is the first one.</h3>
+            <p>Did you know i have a garden?</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="second" class="tab-content">
+            <h3>This is the second one.</h3>
+            <p>The garden is lush with florae</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="third" class="tab-content">
+            <h3>This is the third one.</h3>
+            <p>The bunnies are merry in the garden</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="fourth" class="tab-content">
+            <h3>This is the fourth one.</h3>
+            <p>I buried a body in That garden.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
